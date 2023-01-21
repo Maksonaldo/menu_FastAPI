@@ -1,12 +1,12 @@
 from fastapi import APIRouter
-from models.database import get_session
+from src.models.database import get_session
 from sqlalchemy import select, insert, update
 from sqlalchemy.orm import Session
 from fastapi import Depends, HTTPException
 
-from models.schemas import DishCreate
+from src.models.schemas import DishCreate
 
-from models.models import menu, submenu, dish, Dish
+from src.models.models import menu, submenu, dish, Dish
 
 
 router = APIRouter(

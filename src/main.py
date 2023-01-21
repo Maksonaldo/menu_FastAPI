@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 import uvicorn
 
-from models.router_menu import router as router_menu
-from models.router_submeny import router as router_submenu
-from models.router_dish import router as router_dish
+from src.models.router_menu import router as router_menu
+from src.models.router_submeny import router as router_submenu
+from src.models.router_dish import router as router_dish
 
 app = FastAPI()
 

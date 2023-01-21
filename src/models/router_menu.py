@@ -1,13 +1,13 @@
 from fastapi import APIRouter
-from models.database import get_session
+from src.models.database import get_session
 from sqlalchemy import select, insert
 from sqlalchemy.orm import Session
 from fastapi import Depends, HTTPException
 
-from models.schemas import MenuCreate
+from src.models.schemas import MenuCreate
 
 
-from models.models import menu, submenu, dish, Menu
+from src.models.models import menu, submenu, dish, Menu
 
 router = APIRouter(
     prefix="/api/v1/menus",
